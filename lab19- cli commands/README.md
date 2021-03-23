@@ -36,3 +36,13 @@
     We need to set the env variable TF_LOG, `export TF_LOG=TRACE`
 
     Posible Values: TRACE, DEBUG, INFO, WARN or ERROR.
+
+9. See and Generate a Dependency Graph
+
+    `terraform graph`
+
+    The output of this is not complex to understand and hard to read, we can use a tool to plot the graph:
+
+    `sudo apt install graphviz`
+    
+    `terraform graph | dot -Tpdf > graph-plan.pdf`
